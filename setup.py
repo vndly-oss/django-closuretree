@@ -15,17 +15,15 @@
 """Setup file for django-closuretree."""
 from setuptools import setup, find_packages
 
-from closuretree.version import __VERSION__
-
 setup(
     name='django-closuretree',
-    version=__VERSION__,
+    version="1.2.0",
     packages=find_packages(),
     author='Mike Bryant',
     author_email='mike.bryant@ocado.com',
     description='Efficient tree-based datastructure for Django',
     long_description=open('README.rst').read(),
-    url='https://github.com/ocadotechnology/django-closuretree/',
+    url='https://github.com/vndly-oss/django-closuretree',
     install_requires=[
         'django >= 1.4, < 1.12',
         'django-autoconfig',
