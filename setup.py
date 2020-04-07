@@ -25,8 +25,7 @@ setup(
     long_description=open('README.rst').read(),
     url='https://github.com/vndly-oss/django-closuretree',
     install_requires=[
-        'django >= 1.4, < 2.1',
-        'django-autoconfig',
+        'django >= 2.0, < 2.1',
     ],
     tests_require=['django-setuptest >= 0.2'],
     test_suite='setuptest.setuptest.SetupTestSuite',
