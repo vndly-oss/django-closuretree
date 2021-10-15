@@ -26,6 +26,7 @@ setup(
     url='https://github.com/vndly-oss/django-closuretree',
     install_requires=[
         'django >= 2.0, < 3.1',
+        'six >= 1.13, < 2.0'
     ],
     tests_require=['django-setuptest >= 0.2'],
     test_suite='setuptest.setuptest.SetupTestSuite',
