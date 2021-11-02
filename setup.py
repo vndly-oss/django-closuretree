@@ -28,7 +28,7 @@ setup(
         'django >= 2.0, < 3.1',
         'six >= 1.13, < 2.0'
     ],
-    tests_require=['django-setuptest >= 0.2'],
+    tests_require=['django-setuptest >= 0.2.1'],
     test_suite='setuptest.setuptest.SetupTestSuite',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
