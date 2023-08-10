@@ -13,11 +13,22 @@
 # limitations under the License.
 
 """Setup file for django-closuretree."""
+import os
+import re
+
 from setuptools import setup, find_packages
+
+
+def get_version(filename):
+    path = os.path.join(os.path.dirname(__file__), filename)
+    with open(path, encoding="utf-8") as handle:
+        content = handle.read()
+    return re.search(r'__version__ = "([^"]+)"', content).group(1)
+
 
 setup(
     name='django-closuretree',
-    version="1.2.2",
+    version=get_version('closuretree/__init__.py'),
     packages=find_packages(),
     author='Mike Bryant',
     author_email='mike.bryant@ocado.com',
